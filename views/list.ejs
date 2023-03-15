@@ -1,0 +1,16 @@
+<%- include("header"); %>
+
+<h1><%= listTitle %></h1>
+
+<ul>
+    <% for(let i = 0; i < tasks.length; i++){ %>
+        <li> <%= tasks[i] %> </li>
+    <% } %>
+</ul>
+
+<form action="<%= buttonActionType %>" method="post">
+    <input type="text" name="elementToAdd">
+    <button type="submit" name="button">Add</button>
+</form>
+    
+<%- include("footer"); %>
